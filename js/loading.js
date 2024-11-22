@@ -20,5 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         console.log('5초 후 페이지를 home.html로 이동합니다.');
         window.location.href = "home.html";
-    }, 5000);
+    }, 8000);
 });

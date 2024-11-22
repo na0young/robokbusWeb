@@ -43,7 +43,7 @@ body {
     height: 100%;
     background-color: #0090EA;
     border-radius: 9999px;
-    animation: loading 5s linear forwards; /* 10 seconds animation duration */
+    animation: loading 8s linear forwards; /* 10 seconds animation duration */
 }
 
 @keyframes loading {
