@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Jalnan';
+  src: url('../assets/fonts/JalnanOTF.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* 전체 컨테이너 */
 body {
   margin: 0;
@@ -8,7 +15,7 @@ body {
   align-items: center;
   min-height: 92vh;
   background-color: #f9f9f9;
-  font-family: Arial, sans-serif;
+  font-family: 'Jalnan', sans-serif;
 }
 
 .container {
