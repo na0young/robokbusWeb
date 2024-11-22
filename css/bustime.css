@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'Jalnan';
+    src: url('../assets/fonts/JalnanOTF.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* 기본 스타일 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Jalnan', sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -46,10 +53,11 @@ table {
 }
 
 table th, table td {
-    border: 2px solid #007BFF;
+    border: 2px solid #0090EA;
     padding: 5px;
-    text-align: left;
+    text-align: center;
     font-size: 1.2rem;
+    font-family: Arial, sans-serif;
 }
 
 table th {
@@ -65,7 +73,7 @@ table tr:nth-child(even) {
 .footer-buttons {
     display: flex;
     justify-content: space-between;
-    background-color: #007BFF;
+    background-color: #0090EA;
     padding: 10px 0;
     width: 100%;
     height: 80px;
@@ -77,13 +85,14 @@ table tr:nth-child(even) {
     margin: 0 5px;
     padding: 10px;
     font-size: 1rem;
-    font-weight: bold;
     color: #fff;
-    background-color: #0056b3;
+    background-color: #0090EA;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    font-family: 'Jalnan', sans-serif;
+    line-height: 24px;
 }
 
 .footer-buttons button:hover {

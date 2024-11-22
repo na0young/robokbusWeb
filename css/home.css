@@ -4,32 +4,33 @@
   font-weight: normal;
   font-style: normal;
 }
-
-/* 전체 컨테이너 */
-body {
-  margin: 0;
-  font-family: 'Jalnan', sans-serif;
+/* 헤더 */
+header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4;
-  min-height: 100vh;
+  background-color: white;
+  padding-top: 50px
+}
+
+/* 기본 레이아웃 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  font-family: 'Jalnan', sans-serif;
 }
 
 .container {
-  text-align: center;
-  background: white;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 400px;
-}
-
-/* 상단 로고 */
-.top-logo {
-  width: 250px;
-  margin-bottom: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 /* 레벨 텍스트 */
@@ -39,7 +40,7 @@ body {
   color: #333;
 }
 
-/* 원형 진행 링과 이미지 */
+/* 원형 링과 이미지 */
 .progress-ring {
   position: relative;
   width: 300px;
@@ -58,26 +59,15 @@ svg {
 
 .circle-image {
   width: 200px;
-<<<<<<< HEAD
   border-radius: 20%;
-  position: absolute;
-}
-
-.circle-image-r {
-  width: 250px;
-  border-radius: 20%;
-=======
-  border-radius: 50%;
->>>>>>> 28d9d3749c51685b274af6c381b0de27853b957e
   position: absolute;
 }
 
 /* 상태 텍스트 */
 .status-text {
   font-size: 1.25rem;
-  color: #555; /* 좀 더 부드러운 회색 */
-  font-weight: normal;
-  margin-bottom: 3rem;
+  color: #555;
+  margin-bottom: 2rem;
   line-height: 1.5;
 }
 
@@ -85,19 +75,19 @@ svg {
 .underline {
   text-decoration: underline;
   font-weight: bold;
-  color: #333; /* 강조 색상 */
+  color: #333;
 }
 
 /* 버튼 컨테이너 */
 .button-container {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-button {
-  width: 160px;
-  height: 100px;
+button-l {
+  width: 140px;
+  height:90px;
   padding: 10px;
   background: #0090EA;
   border: none;
@@ -107,23 +97,32 @@ button {
   font-size: 1.2rem;
   font-family: 'Jalnan', sans-serif;
   line-height: 26px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+button-r {
+  width: 140px;
+  height:90px;
+  padding: 10px;
+  background: #0090EA;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Jalnan', sans-serif;
+  line-height: 26px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 
 button:hover {
   background: #0077cc;
-}
-
-/* 하단 아이콘 */
-.footer-icon img {
-  width: 50px;
-  height: auto;
-  margin-top: 1rem;
-}
-
-/* 링 애니메이션 */
-.progress {
-  transform: rotate(-90deg);
-  transform-origin: center;
-  stroke-linecap: round;
-  transition: stroke-dashoffset 0.5s;
 }

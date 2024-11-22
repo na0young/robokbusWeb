@@ -14,7 +14,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 92vh;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   font-family: 'Jalnan', sans-serif;
 }
 
@@ -100,11 +100,13 @@ body {
 }
 
 .arrival-line span {
+  padding-top: 20px;
   font-size: 20px;
   font-weight: bold;
 }
 
 .bus-icon img {
+  padding-top: 20px;
   width: 50px;
   height: auto; 
   display: block; 
@@ -116,8 +118,8 @@ body {
   color: #01EBA1;
   font-weight: bold;
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 /* Footer Buttons */
@@ -131,18 +133,30 @@ body {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* 하단 버튼 스타일 */
+.footer-buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0090EA;
+  padding: 10px 0;
+  width: 100%;
+  height: 80px;
+  margin: 0px auto 0;
+}
+
 .footer-buttons button {
   flex: 1;
   margin: 0 5px;
   padding: 10px;
-  background-color: #0056b3;
+  font-size: 1rem;
   color: #fff;
+  background-color: #0090EA;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
   cursor: pointer;
   text-align: center;
+  font-family: 'Jalnan', sans-serif;
+  line-height: 24px;
 }
 
 .footer-buttons button:hover {
