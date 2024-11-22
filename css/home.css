@@ -58,6 +58,7 @@ svg {
 
 .circle-image {
   width: 200px;
+<<<<<<< HEAD
   border-radius: 20%;
   position: absolute;
 }
@@ -65,6 +66,9 @@ svg {
 .circle-image-r {
   width: 250px;
   border-radius: 20%;
+=======
+  border-radius: 50%;
+>>>>>>> 28d9d3749c51685b274af6c381b0de27853b957e
   position: absolute;
 }
 

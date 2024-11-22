@@ -58,11 +58,15 @@ body {
   }
   
   .character-image {
+<<<<<<< HEAD
     width: 250px;
     margin-bottom: 10px;
   }
   .character-image-r { /*로복이 혼자 너무 조그마해서 추가함*/
     width: 300px;
+=======
+    width: 200px;
+>>>>>>> 28d9d3749c51685b274af6c381b0de27853b957e
     margin-bottom: 10px;
   }
   
