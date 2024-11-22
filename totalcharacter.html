@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Total Character</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/totalcharacter.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Total Character</h1>
+
+    <!-- 캐릭터 목록 -->
+    <div class="character-list">
+      <!-- 로복이 -->
+      <div class="character-card" onclick="selectCharacter('assets/robok.png')">
+        <img src="assets/robok.png" alt="로복이" class="character-image">
+        <p class="character-name">로복이</p>
+      </div>
+
+      <!-- 마룡이 -->
+      <div class="character-card" onclick="selectCharacter('assets/maryong.png')">
+        <img src="assets/maryong.png" alt="마룡이" class="character-image">
+        <p class="character-name">마룡이</p>
+      </div>
+
+      <!-- 싸리 -->
+      <div class="character-card" onclick="selectCharacter('assets/ssari.png')">
+        <img src="assets/ssari.png" alt="싸리" class="character-image">
+        <p class="character-name">싸리</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function selectCharacter(imagePath) {
+      sessionStorage.setItem("selectedCharacter", imagePath);
+      window.location.href = "home.html";
+    }
+  </script>
+</body>
+</html>

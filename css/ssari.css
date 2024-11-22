@@ -1,0 +1,70 @@
+/* 전체 컨테이너 */
+body {
+    margin: 0;
+    font-family: 'Sigmar', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    width:90%;
+    max-width: 400px;
+  }
+  
+  /* 캐릭터 카드 */
+  .character-card {
+    background: #0090EA;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 카드 그림자 */
+  }
+  
+  /* 이미지 컨테이너 */
+  .image-container {
+    background-color: #0090EA; /* 이미지 주변 파란 배경 */
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .character-image {
+    width: 200px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  
+  /* 캐릭터 이름 */
+  .character-name {
+    color: #ffffff; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  
+  /* 설명 텍스트 */
+  .achievement-text {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #0090EA; /* 파란색 텍스트 */
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    font-size: 1.5rem;
+    color: #0090EA;
+    text-decoration: underline; /* 밑줄 강조 */
+  }
+  
